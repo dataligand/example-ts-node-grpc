@@ -1,0 +1,13 @@
+syntax="proto3";
+
+message Query {
+    string name = 1;
+}
+
+message Response {
+    string name = 1;
+}
+
+service Echo {
+    rpc echo(Query) returns (Response);
+}
